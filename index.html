@@ -1,23 +1,96 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/script.js" defer></script>
-    <link href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <header>
 
+<body class="root">
+    <header>
+        <div class="container">
+            <div class="grid header">
+                <div class="header__block">
+                    <a class="logo text--uppercase" href="#">РАЗРАБОЧИК САЙТОВ</a>
+                </div>
+                <nav class="grid nav header__block">
+                </nav>
+                <nav class="grid header__block">
+                    <div class="nav__links flex">
+                        <a href="#" class="transition">Навыки</a>
+                        <a href="#" class="transition">Процесс</a>
+                        <a href="#" class="transition">Услуги</a>
+                        <a href="#" class="transition">Контакты</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="header mobile-menu open">
+                <nav class="header__block">
+                    <a class="logo text--uppercase" href="#">РАЗРАБОЧИК САЙТОВ</a>
+                </nav>
+                <div class="burger-menu grid" aria-label="Меню">
+                    <span class=""></span>
+                    <span class=""></span>
+                    <span class=""></span>
+                </div>
+                <nav class="links--mobile ">
+                    <a href="#" class="transition">Навыки</a>
+                    <a href="#" class="transition">Процесс</a>
+                    <a href="#" class="transition">Услуги</a>
+                    <a href="#" class="transition">Контакты</a>
+                </nav>
+            </div>
+        </div>
     </header>
     <main>
-
+        <section id="about-me">
+            <div class="container main--border mh-100">
+                <div class="about-me">
+                    <div class="grid standard">
+                        <div class="standard__block">
+                            <p class="mb-1">Full-Stack разработчик на Laravel · React</p>
+                            <p>Пишу код. Строю базы. Делаю сайты</p>
+                        </div>
+                        <div class="standard__block display">
+                            <img src="assets/images/LeilaKilm.png" class="display__img" alt="">
+                        </div>
+                        <div class="standard__block relative">
+                            <h2 class="mb-1">{ Обо мне }</h2>
+                            <h5 class="mb-6 text--uppercase text--primary-blue">Мой путь</h5>
+                            <p class="mb-5">Я пришла в IT осознанно: писала свои проекты, изучала стек. Проходила практику в
+                                «Р.О.С.КОМТЕХ» – работала в команде над реальными задачами, видела, как строится
+                                разработка в крупной компании, и училась взаимодействовать с другими специалистами.</p>
+                            <p>Сейчас продолжаю углубляться в Laravel, осваиваю новые подходы и работаю над
+                                собственными проектами, чтобы делать сайты ещё надёжнее и удобнее.</p>
+                            <button class="btn transition absolute">Обсудить проект</button>
+                        </div>
+                        <div class="standard__block relative">
+                            <h1 class="mb-3">Кильматова Лейла</h1>
+                            <h3 class="text--blue">Сайты под ключ:</h3>
+                            <h3 class="text--blue"> от дизайна до бэкенда</h3>
+                            <div class="absolute description">
+                                <span>Мой подход: работаю прозрачно и поэтапно, всегда на связи с клиентом и довожу
+                                    проекты до запуска. После сдачи сайта поддержка 14 дней бесплатно</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="grid standard separator">
+                    <div class="standard__block"></div>
+                    <div class="standard__block"></div>
+                    <div class="standard__block"></div>
+                </div> -->
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
