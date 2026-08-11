@@ -21,7 +21,7 @@
                 <nav class="grid nav header__block">
                 </nav>
                 <nav class="grid header__block">
-                    <div class="nav__links flex">
+                    <div class="nav__links flex--description">
                         <a href="#" class="transition">Навыки</a>
                         <a href="#" class="transition">Процесс</a>
                         <a href="#" class="transition">Услуги</a>
@@ -70,11 +70,13 @@
                                 собственными проектами, чтобы делать сайты ещё надёжнее и удобнее.</p>
                             <button class="btn transition absolute">Обсудить проект</button>
                         </div>
-                        <div class="standard__block relative">
-                            <h1 class="mb-3">Кильматова Лейла</h1>
-                            <h3 class="text--blue">Сайты под ключ:</h3>
-                            <h3 class="text--blue"> от дизайна до бэкенда</h3>
-                            <div class="absolute description">
+                        <div class="standard__block flex flex--description">
+                            <div>
+                                <h1 class="mb-3">Кильматова Лейла</h1>
+                                <h3 class="text--blue">Сайты под ключ:</h3>
+                                <h3 class="text--blue"> от дизайна до бэкенда</h3>
+                            </div>
+                            <div class="description">
                                 <span>Мой подход: работаю прозрачно и поэтапно, всегда на связи с клиентом и довожу
                                     проекты до запуска. После сдачи сайта поддержка 14 дней бесплатно</span>
                             </div>
@@ -92,13 +94,13 @@
             <div class="container main--border">
                 <div class="technologies">
                     <div class="grid standard">
-                        <div class="standard__block relative">
-                            <div class="grid">
+                        <div class="standard__block">
+                            <div class="flex flex--description">
                                 <div>
                                     <h2 class="mb-1">{ Стек технологий }</h2>
-                                    <h5 class="mb-6 text--uppercase text--primary-blue">НАВЫКИ</h5>
+                                    <h5 class="mb-6 text--uppercase text--primary-blue">Навыки</h5>
                                 </div>
-                                <div class="absolute description">
+                                <div class="description">
                                     <span>Вам не нужно собирать команду.Я сама разрабатываю дизайн, верстаю адаптивные
                                         интерфейсы на React и пишу бэкенд на Laravel. Это экономит ваше время, деньги и
                                         нервы, потому что за всё отвечаю я, а не три разных специалиста с разными
@@ -137,7 +139,79 @@
                         </div>
                     </div>
                 </div>
+                <div class="grid standard separator">
+                    <div class="standard__block"></div>
+                    <div class="standard__block"></div>
+                    <div class="standard__block"></div>
+                </div>
             </div>
+        </section>
+        <section id="process">
+            <div class="container main--border">
+                <div class="process">
+                    <div class="grid standard">
+                        <div class="standard__block">
+                            <div class="flex flex--description">
+                                <div>
+                                    <h2 class="mb-1">{ Как я создаю сайты }</h2>
+                                    <h5 class="mb-6 text--uppercase text--primary-blue">Процесс</h5>
+                                </div>
+                                <div class="description">
+                                    <span>Работаю прозрачно и поэтапно. Вы всегда знаете, на каком шаге ваш проект, и
+                                        можете вносить правки до фиксации.</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="standard__block flex">
+                            <div class="scheme flex">
+                                <div class="scheme__block flex relative">
+                                    <h3 class="absolute text--secondary">00</h3>
+                                    <div class="illustration display mb-4">
+                                        <img class="display__img" src="assets/images/edit-alt-svgrepo-com.svg" alt="">
+                                    </div>
+                                    <h3 class="mb-1">Дизайн </h3>
+                                    <h6>Прорабатываю структуру и внешний вид вашего сайта.</h6>
+                                </div>
+                                <div class="line-next"></div>
+                                <div class="scheme__block flex relative">
+                                    <h3 class="absolute text--secondary">01</h3>
+                                    <div class="illustration display mb-4">
+                                        <img class="display__img" src="assets/images/programming-svgrepo-com.svg"
+                                            alt="">
+                                    </div>
+                                    <h3 class="mb-1">Вёрстка  </h3>
+                                    <h6>Превращаю дизайн в адаптивный код.</h6>
+                                </div>
+                                <div class="line-next"></div>
+                                <div class="scheme__block flex relative">
+                                    <h3 class="absolute text--secondary">02</h3>
+                                    <div class="illustration display mb-4">
+                                        <img class="display__img" src="assets/images/gears-menu-svgrepo-com 1.svg"
+                                            alt="">
+                                    </div>
+                                    <h3 class="mb-1">Программирование</h3>
+                                    <h6>Добавляю логику: формы отправки, калькуляторы, анимации, корзину, личные
+                                        кабинеты.</h6>
+                                </div>
+                                <div class="line-next"></div>
+                                <div class="scheme__block flex relative">
+                                    <h3 class="absolute text--secondary">03</h3>
+                                    <div class="illustration display mb-4">
+                                        <img class="display__img" src="assets/images/launch-svgrepo-com.svg" alt="">
+                                    </div>
+                                    <h3 class="mb-1">Тест и запуск</h3>
+                                    <h6>Проверяю работу на всех устройствах и в браузерах.</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid standard separator">
+                    <div class="standard__block"></div>
+                    <div class="standard__block"></div>
+                    <div class="standard__block"></div>
+                </div>
         </section>
     </main>
     <footer>
