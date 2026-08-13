@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.toggle('open')
     });
 
-    const mobileLinks = mobileMenu.querySelectorAll('.links--mobile a');
+    const mobileLinks = mobileMenu.querySelectorAll('.links--mobile a')
     mobileLinks.forEach(link => {
         link.addEventListener('click', function() {
             mobileMenu.classList.remove('open')
