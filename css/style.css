@@ -17,6 +17,8 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-margin-top: 70px;
 }
 
 h1,
@@ -262,6 +264,8 @@ button {
 }
 
 .btn {
+    font-size: 16px;
+    text-decoration: none;
     display: flex;
     cursor: pointer;
     padding: 13px 30px;
@@ -277,7 +281,7 @@ button {
 }
 
 .nav__links {
-    gap: 36px;
+    gap: 24px;
 }
 
 .logo {
@@ -760,6 +764,10 @@ button {
 
 }
 
+
+.title-group:hover h5{
+    transform: translateX(24px);
+}
 .scheme__block {
     flex-direction: column;
     align-items: center;
@@ -773,6 +781,22 @@ button {
     text-align: center;
 }
 
+.scheme__block:hover .illustration {
+    border: 3.25px solid var(--color-blue-primary);
+    transform: translateY(-3px);
+}
+.scheme__block:hover h3:first-child{
+    transform: translateY(-3px);
+}
+
+.scheme__block:hover .display__img,
+.scheme__block:hover h3,
+.scheme__block:hover h6{
+    color: var(--color-blue-primary);
+}
+/* .scheme__block:nth-child(3):hover ~ .scheme__block:first-child .display__img {
+    color: var(--color-blue-primary);
+} */
 .line-next {
     border: 1px solid var(--color-grid);
     height: 1px;
@@ -855,6 +879,7 @@ button {
     @media(max-width: 720px) {
         padding: 47px;
     }
+
     @media(max-width: 576px) {
         padding: 20px;
     }
@@ -879,6 +904,7 @@ button {
 .price__block {
     height: 52px;
     margin-bottom: 81px;
+
     @media(max-width: 1600px) {
         height: auto;
         margin-bottom: 47px;
@@ -906,30 +932,37 @@ button {
 .list__item--detailed::before {
     content: "–";
 }
-#contacts a{
+
+#contacts a {
     font-size: 18px;
 }
-#contacts .main-links{
+
+#contacts .main-links {
     display: none;
+
     @media(max-width: 992px) {
         display: block;
     }
 }
-#contacts .standard{
+
+#contacts .standard {
     @media(max-width: 992px) {
         grid-template-columns: 1fr 1fr;
     }
+
     @media(max-width: 720px) {
         grid-template-columns: 1fr;
     }
-    
+
 }
-#contacts .standard .standard__block:nth-child(2){
+
+#contacts .standard .standard__block:nth-child(2) {
     @media(max-width: 992px) {
         display: none;
     }
 }
-#contacts .standard .standard__block:last-child div{
+
+#contacts .standard .standard__block:last-child div {
     @media(max-width: 992px) {
         margin-bottom: 14px;
     }

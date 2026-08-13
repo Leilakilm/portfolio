@@ -16,16 +16,16 @@
         <div class="container">
             <div class="grid header">
                 <div class="header__block">
-                    <a class="logo text--uppercase" href="#">РАЗРАБОЧИК САЙТОВ</a>
+                    <a class="logo text--uppercase" href="#about-me">РАЗРАБОЧИК САЙТОВ</a>
                 </div>
                 <nav class="grid nav header__block">
                 </nav>
                 <nav class="grid header__block">
-                    <div class="nav__links flex--description">
-                        <a href="#" class="transition">Навыки</a>
-                        <a href="#" class="transition">Процесс</a>
-                        <a href="#" class="transition">Услуги</a>
-                        <a href="#" class="transition">Контакты</a>
+                    <div class="nav__links flex">
+                        <a href="#technologies" class="transition">Навыки</a>
+                        <a href="#process" class="transition">Процесс</a>
+                        <a href="#services" class="transition">Услуги</a>
+                        <a href="#contacts" class="transition">Контакты</a>
                     </div>
                 </nav>
             </div>
@@ -39,10 +39,10 @@
                     <span class=""></span>
                 </div>
                 <nav class="links--mobile ">
-                    <a href="#" class="transition">Навыки</a>
-                    <a href="#" class="transition">Процесс</a>
-                    <a href="#" class="transition">Услуги</a>
-                    <a href="#" class="transition">Контакты</a>
+                    <a href="#technologies" class="transition">Навыки</a>
+                    <a href="#process" class="transition">Процесс</a>
+                    <a href="#services" class="transition">Услуги</a>
+                    <a href="#contacts" class="transition">Контакты</a>
                 </nav>
             </div>
         </div>
@@ -57,22 +57,24 @@
                             <p>Пишу код. Строю базы. Делаю сайты</p>
                         </div>
                         <div class="standard__block display">
-                            <img src="assets/images/LeilaKilm.png" class="display__img" alt="">
+                            <img src="assets/images/LeilaKilm.png" class="display__img transition" alt="">
                         </div>
                         <div class="standard__block relative">
-                            <h2 class="mb-1">{ Обо мне }</h2>
-                            <h5 class="mb-7 text--uppercase text--primary-blue">Мой путь</h5>
+                            <div class="title-group">
+                                <h2 class="mb-1">{ Обо мне }</h2>
+                                <h5 class="mb-7 transition text--uppercase text--primary-blue">Мой путь</h5>
+                            </div>
                             <p class="mb-5">Я пришла в IT осознанно: писала свои проекты, изучала стек. Проходила
                                 практику в
                                 «Р.О.С.КОМТЕХ» – работала в команде над реальными задачами, видела, как строится
                                 разработка в крупной компании, и училась взаимодействовать с другими специалистами.</p>
                             <p>Сейчас продолжаю углубляться в Laravel, осваиваю новые подходы и работаю над
                                 собственными проектами, чтобы делать сайты ещё надёжнее и удобнее.</p>
-                            <button class="btn transition absolute">Обсудить проект</button>
+                            <a href="#services" class="btn transition absolute">Обсудить проект</a>
                         </div>
                         <div class="standard__block flex flex--description">
                             <div>
-                                <h1 class="mb-3">Кильматова Лейла</h1>
+                                <h1 class="mb-3">Лейла Кильматова</h1>
                                 <h3 class="text--blue">Сайты под ключ:</h3>
                                 <h3 class="text--blue"> от дизайна до бэкенда</h3>
                             </div>
@@ -96,9 +98,9 @@
                     <div class="grid standard">
                         <div class="standard__block">
                             <div class="flex flex--description">
-                                <div>
+                                <div class="title-group">
                                     <h2 class="mb-1">{ Стек технологий }</h2>
-                                    <h5 class="mb-7 text--uppercase text--primary-blue">Навыки</h5>
+                                    <h5 class="mb-7 transition text--uppercase text--primary-blue">Навыки</h5>
                                 </div>
                                 <div class="description">
                                     <span>Вам не нужно собирать команду.Я сама разрабатываю дизайн, верстаю адаптивные
@@ -152,9 +154,9 @@
                     <div class="grid standard">
                         <div class="standard__block">
                             <div class="flex flex--description">
-                                <div>
+                                <div class="title-group">
                                     <h2 class="mb-1">{ Как я создаю сайты }</h2>
-                                    <h5 class="mb-7 text--uppercase text--primary-blue">Процесс</h5>
+                                    <h5 class="mb-7 transition text--uppercase text--primary-blue">Процесс</h5>
                                 </div>
                                 <div class="description">
                                     <span>Работаю прозрачно и поэтапно. Вы всегда знаете, на каком шаге ваш проект, и
@@ -166,29 +168,64 @@
                         <div class="standard__block flex">
                             <div class="scheme flex">
                                 <div class="scheme__block flex relative">
-                                    <h3 class="absolute text--secondary">00</h3>
-                                    <div class="illustration display mb-4">
-                                        <img class="display__img" src="assets/images/edit-alt-svgrepo-com.svg" alt="">
+                                    <h3 class="transition absolute text--secondary">00</h3>
+                                    <div class="illustration transition display mb-4">
+                                        <svg fill="currentColor" class="display__img transition" width="800px"
+                                            height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    d="M19.045 7.401c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.378-.378-.88-.586-1.414-.586s-1.036.208-1.413.585L4 13.585V18h4.413L19.045 7.401zm-3-3 1.587 1.585-1.59 1.584-1.586-1.585 1.589-1.584zM6 16v-1.585l7.04-7.018 1.586 1.586L7.587 16H6zm-2 4h16v2H4z" />
+                                            </g>
+                                        </svg>
                                     </div>
                                     <h3 class="mb-1">Дизайн </h3>
                                     <h6>Прорабатываю структуру и внешний вид вашего сайта.</h6>
                                 </div>
                                 <div class="line-next"></div>
                                 <div class="scheme__block flex relative">
-                                    <h3 class="absolute text--secondary">01</h3>
-                                    <div class="illustration display mb-4">
-                                        <img class="display__img" src="assets/images/programming-svgrepo-com.svg"
-                                            alt="">
+                                    <h3 class="transition absolute text--secondary">01</h3>
+                                    <div class="illustration transition display mb-4">
+                                        <svg width="48px" height="48px" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                            stroke-width="1.91px" stroke-miterlimit="10"
+                                            class="display__img transition">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <g id="SVGRepo_iconCarrier">
+                                                <polyline points="7.23 6.27 1.5 12 7.23 17.73" />
+                                                <polyline points="16.77 17.73 22.5 12 16.77 6.27" />
+                                                <line x1="14.86" y1="6.27" x2="9.14" y2="17.73" />
+                                            </g>
+                                        </svg>
                                     </div>
                                     <h3 class="mb-1">Вёрстка  </h3>
                                     <h6>Превращаю дизайн в адаптивный код.</h6>
                                 </div>
                                 <div class="line-next"></div>
                                 <div class="scheme__block flex relative">
-                                    <h3 class="absolute text--secondary">02</h3>
-                                    <div class="illustration display mb-4">
-                                        <img class="display__img" src="assets/images/gears-menu-svgrepo-com 1.svg"
-                                            alt="">
+                                    <h3 class="transition absolute text--secondary">02</h3>
+                                    <div class="illustration transition display mb-4">
+                                        <svg class="display__img transition" width="23" height="23" viewBox="0 0 23 23"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_77_1186)">
+                                                <path
+                                                    d="M22.5557 9.55181L20.4798 8.1881C20.3945 7.96284 20.2972 7.73146 20.1937 7.50629L20.6929 5.07109C20.7659 4.73018 20.6563 4.37704 20.4189 4.13963L18.8786 2.59944C18.629 2.34979 18.2821 2.25241 17.9472 2.32549L15.512 2.8247C15.2867 2.7212 15.0554 2.62383 14.8302 2.5386L13.4604 0.462668C13.2717 0.170451 12.9491 0 12.6021 0H10.4286C10.0877 0 9.75899 0.176573 9.57027 0.462668L8.20053 2.5386C7.97527 2.62383 7.74389 2.7212 7.51872 2.8247L5.08352 2.32549C4.74864 2.25854 4.38947 2.36203 4.15206 2.59944L2.61178 4.13972C2.36213 4.38937 2.26475 4.7363 2.33783 5.07118L2.83704 7.50639C2.72742 7.73165 2.63617 7.96293 2.55094 8.18819L0.46879 9.55181C0.176573 9.74053 0 10.0633 0 10.4102V12.5836C0 12.9245 0.176573 13.2533 0.46879 13.442L2.54473 14.8057C2.62995 15.0309 2.72733 15.2623 2.83082 15.4875L2.33161 17.9227C2.25854 18.2636 2.36815 18.6167 2.60556 18.8542L4.14584 20.3944C4.3955 20.6441 4.74243 20.7415 5.0773 20.6684L7.51251 20.1692C7.73777 20.2727 7.96905 20.37 8.19431 20.4553L9.56405 22.5312C9.75277 22.8234 10.0754 23 10.4224 23H12.5958C12.9367 23 13.2655 22.8234 13.4542 22.5312L14.824 20.4553C15.0492 20.37 15.2806 20.2727 15.5058 20.1692L17.941 20.6684C18.2758 20.7353 18.635 20.6318 18.8724 20.3944L20.4127 18.8542C20.6624 18.6045 20.7597 18.2576 20.6867 17.9227L20.1874 15.4875C20.2971 15.2622 20.3883 15.0309 20.4735 14.8057L22.5495 13.4359C22.8417 13.2472 23.0121 12.9246 23.0121 12.5776V10.4042C23.0245 10.0633 22.8479 9.74053 22.5557 9.55181ZM20.979 12.0357H20.9728L19.0734 13.2898C18.8785 13.4237 18.7325 13.6124 18.6594 13.8255C18.5438 14.1847 18.3916 14.5379 18.2089 14.897C18.1054 15.1101 18.0689 15.3414 18.1237 15.5667L18.5863 17.8009L17.8314 18.5558L15.5972 18.0931C15.3719 18.0505 15.1345 18.081 14.9214 18.1784C14.5623 18.361 14.2031 18.5132 13.8499 18.6289C13.6308 18.702 13.4359 18.848 13.3142 19.0429L12.0601 20.9423H10.9886L9.7345 19.0429C9.60059 18.848 9.41187 18.702 9.19876 18.6289C8.83958 18.5132 8.48041 18.3611 8.12726 18.1784C7.91415 18.0749 7.68286 18.0383 7.45148 18.0931L5.21724 18.5558L4.45624 17.7948L4.92503 15.5606C4.96769 15.3353 4.93718 15.0918 4.8398 14.8848C4.6572 14.5256 4.50492 14.1664 4.3954 13.8133C4.32232 13.5942 4.17626 13.3993 3.98142 13.2776L2.08196 12.0235V10.952L3.98142 9.69787C4.17626 9.56396 4.32232 9.37524 4.3954 9.16212C4.51105 8.80295 4.66323 8.4498 4.84592 8.09063C4.94942 7.87752 4.98596 7.64623 4.93115 7.42097L4.46848 5.19276L5.22336 4.43787L7.4576 4.90054C7.68286 4.9432 7.92639 4.91269 8.13339 4.81532C8.49256 4.63271 8.84571 4.48044 9.20488 4.36479C9.42402 4.29172 9.61886 4.14566 9.74063 3.95081L10.9947 2.05136H12.0662L13.3203 3.95081C13.4542 4.14566 13.6429 4.29172 13.8561 4.36479C14.2152 4.48044 14.5744 4.63262 14.9275 4.81532C15.1407 4.91881 15.3719 4.95535 15.6033 4.90054L17.8376 4.43787L18.5925 5.19276L18.1298 7.427C18.0871 7.65226 18.1176 7.88967 18.215 8.09666C18.3976 8.45583 18.5499 8.815 18.6594 9.16815C18.7325 9.39341 18.8785 9.58213 19.0734 9.7039L20.9789 10.958V12.0357H20.979Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M11.5182 6.90344C8.98564 6.90344 6.92798 8.96111 6.92798 11.4937C6.92798 14.0263 8.98564 16.0839 11.5182 16.0839C14.0508 16.0839 16.1085 14.0262 16.1085 11.4937C16.1085 8.9612 14.0508 6.90344 11.5182 6.90344ZM11.5182 14.0324C10.1241 14.0324 8.97952 12.8878 8.97952 11.4937C8.97952 10.0934 10.1241 8.95499 11.5182 8.95499C12.9123 8.95499 14.0569 10.0996 14.0569 11.4937C14.0508 12.9001 12.9123 14.0324 11.5182 14.0324Z"
+                                                    fill="currentColor" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_77_1186">
+                                                    <rect width="23" height="23" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
                                     </div>
                                     <h3 class="mb-1">Программирование</h3>
                                     <h6>Добавляю логику: формы отправки, калькуляторы, анимации, корзину, личные
@@ -196,9 +233,13 @@
                                 </div>
                                 <div class="line-next"></div>
                                 <div class="scheme__block flex relative">
-                                    <h3 class="absolute text--secondary">03</h3>
-                                    <div class="illustration display mb-4">
-                                        <img class="display__img" src="assets/images/launch-svgrepo-com.svg" alt="">
+                                    <h3 class="transition absolute text--secondary">03</h3>
+                                    <div class="illustration transition display mb-4">
+                                        <svg class="display__img transition" width="800px" height="800px"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" stroke="currentColor" stroke-width="2"
+                                                d="M7,9 L7,14 C7,14 4,16 4,19 L4,20 L8,20 L10,23 L14,23 L16,20 L20,20 L20,19 C20,16 17,14 17,14 L17,9 C17,5 14,1 12,1 C10,1 7,5 7,9 Z M8,20 L16,20 M12,9 C12.5522847,9 13,8.55228475 13,8 C13,7.44771525 12.5522847,7 12,7 C11.4477153,7 11,7.44771525 11,8 C11,8.55228475 11.4477153,9 12,9 Z" />
+                                        </svg>
                                     </div>
                                     <h3 class="mb-1">Тест и запуск</h3>
                                     <h6>Проверяю работу на всех устройствах и в браузерах.</h6>
@@ -219,9 +260,9 @@
                     <div class="standard grid">
                         <div class="standard__block">
                             <div class="flex flex--description">
-                                <div>
+                                <div class="title-group">
                                     <h2 class="mb-1">{ Стоимость разработки }</h2>
-                                    <h5 class="mb-7 text--uppercase text--primary-blue">Услуги</h5>
+                                    <h5 class="mb-7 transition text--uppercase text--primary-blue">Услуги</h5>
                                 </div>
                                 <div class="description">
                                     <span>Стоимость зависит от сложности проекта. Оставьте заявку, и я назову точную
@@ -243,25 +284,29 @@
                                 <div class="list flex">
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Верстка сайта по вашему дизайну</p>
                                     </div>
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Адаптивная вёрстка под все устройства</p>
                                     </div>
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Форма отправки заявки</p>
                                     </div>
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Бесплатная поддержка 14 дней</p>
                                     </div>
@@ -281,19 +326,22 @@
                                 <div class="list flex">
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Все, что в тарифе «Базовый»</p>
                                     </div>
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Дизайн в Figma + Вёрстка</p>
                                     </div>
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Согласование макета</p>
                                     </div>
@@ -313,31 +361,36 @@
                                 <div class="list flex">
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Все, что в тарифе «Стандарт»</p>
                                     </div>
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Регистрация и авторизация пользователей</p>
                                     </div>
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Личный кабинет</p>
                                     </div>
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Админ-панель</p>
                                     </div>
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Обучение работе с сайтом</p>
                                     </div>
@@ -357,21 +410,23 @@
                                 <div class="list flex">
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Все, что в тарифе «Бизнес»</p>
                                     </div>
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Интеграция с уведомлениями (Email / Telegram)</p>
                                     </div>
                                     <div class="grid">
                                         <div class="list__item flex">
                                             <div class="display">
-                                                <img class="display__img" src="assets/images/check-svgrepo-com.svg"
-                                                    alt="">
+                                                <img class="display__img transition"
+                                                    src="assets/images/check-svgrepo-com.svg" alt="">
                                             </div>
                                             <p>Расширенная админ-панель:</p>
                                         </div>
@@ -389,7 +444,8 @@
                                     </div>
                                     <div class="flex list__item">
                                         <div class="display">
-                                            <img class="display__img" src="assets/images/check-svgrepo-com.svg" alt="">
+                                            <img class="display__img transition"
+                                                src="assets/images/check-svgrepo-com.svg" alt="">
                                         </div>
                                         <p>Помощь с выбором хостинга и деплой</p>
                                     </div>
@@ -398,7 +454,7 @@
                         </div>
                         <div class="standard__block flex">
                             <div class="display structure flex">
-                                <img class="display__img" src="assets/images/scheme.png" alt="">
+                                <img class="display__img transition" src="assets/images/scheme.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -416,9 +472,9 @@
                     <div class="grid standard">
                         <div class="standard__block">
                             <div class="flex flex--description">
-                                <div>
+                                <div class="title-group">
                                     <h2 class="mb-1">{ Контакты }</h2>
-                                    <h5 class="mb-7 text--uppercase text--primary-blue">Обсудить проект</h5>
+                                    <h5 class="mb-7 transition text--uppercase text--primary-blue">Обсудить проект</h5>
                                 </div>
                                 <div class="description">
                                     <span>Всегда на связи. Напишите и я с радостью помогу с вашим проектом.</span>
@@ -438,11 +494,11 @@
                             </div>
                             <div class="mb-6">
                                 <h5 class="text-blue mb-1">Email</h5>
-                                <a href="#">leilakilm@mail.ru</a>
+                                <a href="mailto:leilakilm@gmail.com">leilakilm@mail.ru</a>
                             </div>
                             <div>
                                 <h5 class="text-blue mb-1">Phone</h5>
-                                <a href="#">+7 919 600-03-35</a>
+                                <a href="tel:+79196000335">+7 919 600-03-35</a>
                             </div>
                         </div>
                     </div>
