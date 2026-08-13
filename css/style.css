@@ -83,11 +83,15 @@ body {
 }
 
 header {
-    border: 1px solid var(--color-grid);
+    border: var(--border-radius) solid var(--color-grid);
     border-right: none;
     border-left: none;
     align-content: center;
     font-size: 14px;
+
+    @media(max-width: 576px) {
+        border: var(--border-radius) solid var(--color-grid);
+    }
 }
 
 header a {
@@ -331,13 +335,12 @@ button {
 
 .mobile-menu {
     display: none;
+    position: relative;
 
     @media(max-width: 720px) {
         display: grid;
         grid-template-columns: 1fr auto;
-        grid-template-rows: auto 0fr;
         align-items: center;
-        transition: grid-template-rows .4s ease-in-out;
     }
 }
 
@@ -354,17 +357,26 @@ button {
 .links--mobile a {
     opacity: 0;
     transform: translateY(-20px);
+    transition: opacity .2s ease-in-out,  transform .2s ease-in-out;
+}
+
+.mobile-menu.open .links--mobile {
+    max-height: 300px;
+    margin-bottom: 24px;
+    margin-top: 12px;
+}
+
+.links--mobile a {
+    opacity: 0;
+    transform: translateY(-20px);
     transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+    pointer-events: none;
 }
 
 .open .links--mobile {
     max-height: 300px;
     margin-bottom: 24px;
     margin-top: 12px;
-}
-
-.mobile-menu.open {
-    grid-template-rows: auto 1fr;
 }
 
 .open .links--mobile a {
@@ -765,9 +777,10 @@ button {
 }
 
 
-.title-group:hover h5{
+.title-group:hover h5 {
     transform: translateX(24px);
 }
+
 .scheme__block {
     flex-direction: column;
     align-items: center;
@@ -785,15 +798,17 @@ button {
     border: 3.25px solid var(--color-blue-primary);
     transform: translateY(-3px);
 }
-.scheme__block:hover h3:first-child{
+
+.scheme__block:hover h3:first-child {
     transform: translateY(-3px);
 }
 
 .scheme__block:hover .display__img,
 .scheme__block:hover h3,
-.scheme__block:hover h6{
+.scheme__block:hover h6 {
     color: var(--color-blue-primary);
 }
+
 /* .scheme__block:nth-child(3):hover ~ .scheme__block:first-child .display__img {
     color: var(--color-blue-primary);
 } */
