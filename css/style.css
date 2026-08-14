@@ -142,7 +142,7 @@ button {
 .root {
     --color-light: #E4E4E4;
     --color-grid: #D2D2D2;
-    --color-dark: #1E1E1E;
+    --color-dark: #080b12;
     --color-silver: #828282;
     --color-blue: #75A3E5;
     --color-blue-primary: #5AA5E8;
@@ -776,6 +776,9 @@ button {
 }
 
 
+.title-group h5 {
+    letter-spacing: 1px;
+}
 .title-group:hover h5 {
     transform: translateX(24px);
 }
